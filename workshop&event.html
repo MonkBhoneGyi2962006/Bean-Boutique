@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Workshops</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="linkactive.js"></script>
+    <script src="menu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header class="mainWelcome">
+            <div class="event_overlay"></div>
+            <div class="color-tint"></div>
+                <h1>Discover the Art of Brewing</h1>
+                    <nav>
+                        <div class="logo-tag">
+                            <a href="index.html"><img src="image/coffee.png" alt="Bean Boutique Logo"></a>
+                            <input type="text" name="search" placeholder="Search.."> <!-- Search Bar Added -->
+                        </div>                     
+                        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Menu Icon for Mobile -->   
+                        <ul id="nav-list">
+                            <li><a href="index.html" class="showactive-link">Home</a></li>
+                            <li><a href="coffeeSelection.html" class="showactive-link">Coffee Selection</a></li>
+                            <li><a href="brewing.html" class="showactive-link">Brewing Equipment</a></li>
+                            <li><a href="workshop&event.html" class="showactive-link" >Events & Workshops</a></li>
+                            <li><a href="subcription.html" class="showactive-link">Special Offers and Subscriptions</a></li>
+                            <li><a href="cart.html" class="showactive-link">Shopping Cart</a></li>
+                        </ul>
+                    </nav>
+                 <div class="welcome-text">
+                    <p>Explore the techniques and secrets behind crafting the perfect cup of coffee. Our workshops cover everything from espresso to pour-over, ensuring you leave with the skills to impress.</p>
+                </div>
+        </header>
+
+
+        <section class="coffeeCatalogueHeading">
+            <h2>Learn How to Master Your Brew</h2>
+            <p>Workshops are held every Tuesday, Thursday, and Saturday at Bean Boutique. Each class is tailored to your background, whether you’re a coffee enthusiast or a budding barista.</p>
+            <hr>
+        </section>
+
+        <section>
+            <div class="outer-container">
+                <div class="barista-section">
+                    <img src="image/barista.jpg.webp" alt="Barista" class="barista-photo">
+                    <div class="barista-content">
+                        <h2>Meet Our Barista</h2>
+                        <p>
+                            At Bean Boutique, our talented baristas are passionate about crafting the perfect cup of coffee just for you. Whether you're enjoying a rich espresso, a silky latte, or a refreshing cold brew, our baristas bring years of expertise and creativity to every cup. Stop by to meet Emma, Liam, and Sophia, and experience their artistry firsthand. They'll be delighted to share brewing tips and stories about their coffee journey, making your visit truly special.
+                        </p>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <hr>
+        <section class="coffeeCatalogueHeading">
+            <h2>Upcoming Workshops</h2>
+            <br>
+            <h3>Road to Barista</h3>
+        </section>
+
+        <section>
+            <div class="outer-container">
+                <div class="barista-section">
+                    <img src="image/Espresso_essential.webp" alt="Espresso Essential" class="barista-photo">
+                    <div class="barista-content">
+                        <h2>Espresso Essentials </h2>
+                        <ul>
+                            <li>Date: Every Tuesday</li>
+                            <li>Time: 10:00 AM - 12:00 PM</li>
+                            <li>Location: Bean Boutique Coffee Shop</li>
+                        </ul>
+                        <p>Dive into the world of espresso with a focus on brewing techniques, machine settings, and flavor profiling.</p>
+                        <a href="#register-container" class="register-button">Register</a>
+                    </div>
+                </div>
+            </div>       
+
+            <div class="outer-container">
+                <div class="barista-section">
+                    <img src="image/Pour+Over+Coffee+1.jpg" alt="Pour-Over Perfection" class="barista-photo">
+                    <div class="barista-content">
+                        <h2>Pour-Over Perfection</h2>
+                        <ul>
+                            <li>Date: Every Thursday</li>
+                            <li>Time: 2:00 PM - 4:00 PM</li>
+                            <li>Location: Bean Boutique Coffee Shop</li>
+                        </ul>
+                        <p>Master the pour-over method with hands-on practice using various coffee drippers. Understand the importance of water temperature, bloom time, and grind size in crafting a flawless cup of coffee.</p>
+                        <a href="#register-container" class="register-button">Register</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outer-container">
+                <div class="barista-section">
+                    <img src="image/latte_art.jpg" alt="Pour-Over Perfection" class="barista-photo">
+                    <div class="barista-content">
+                        <h2>Latte Art Workshop</h2>
+                        <ul>
+                            <li>Date: Every Saturday</li>
+                            <li>Time: 1:00 PM - 3:00 PM</li>
+                            <li>Location: Bean Boutique Coffee Shop</li>
+                        </ul>
+                        <p>Elevate your coffee presentation with our latte art workshop. Learn how to create stunning designs using steamed milk. From hearts to tulips and rosettas, this session is perfect for those looking to add a touch of artistry to their brews.</p>
+                        <a href="#register-container" class="register-button">Register</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outer-container">
+                <div class="barista-section">
+                    <img src="image/cold_brew_creation.jpg" alt="Cold Brew Creations" class="barista-photo">
+                    <div class="barista-content">
+                        <h2>Cold Brew Creations</h2>
+                        <ul>
+                            <li>Date: Every Saturday</li>
+                            <li>Time: 4:00 PM - 6:00 PM</li>
+                            <li>Location: Bean Boutique Coffee Shop</li>
+                        </ul>
+                        <p>Explore the refreshing world of cold brew coffee. This workshop covers brewing techniques, flavor customization, and innovative recipes to keep your cold brew exciting and flavorful.</p>
+                        <a href="#register-container" class="register-button">Register</a>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <hr>
+        <section class="coffeeCatalogueHeading">
+            <br>
+            <h3>Specialty Workshops</h3>
+        </section>
+
+        <section>
+            <div class="outer-container">
+                <div class="barista-section">
+                    <img src="image/Coffee_and_Dessert_Pairing.webp" alt="Coffee and Dessert Pairing" class="barista-photo">
+                    <div class="barista-content">
+                        <h2>Coffee and Dessert Pairing </h2>
+                        <ul>
+                            <li>Date: Last Friday of every month</li>
+                            <li>Time: 5:00 PM - 7:00 PM</li>
+                            <li>Location: Bean Boutique Coffee Shop</li>
+                        </ul>
+                        <p>Discover the art of pairing coffee with desserts. This workshop explores complementary flavors and how to enhance your tasting experience. Enjoy guided tastings with expertly crafted pairings of coffee and sweet treats.</p>
+                        <a href="#register-container" class="register-button">Register</a>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="outer-container">
+                <div class="barista-section">
+                    <img src="image/Advanced_Barista_Skills.png" alt="Advanced Barista Skills" class="barista-photo">
+                    <div class="barista-content">
+                        <h2>Advanced Barista Skills</h2>
+                        <ul>
+                            <li>Date: Second Tuesday of every month</li>
+                            <li>Time: 3:00 PM - 5:00 PM</li>
+                            <li>Location: Bean Boutique Coffee Shop</li>
+                        </ul>
+                        <p>Take your barista skills to the next level with this advanced workshop. Learn about advanced espresso techniques, milk texturing, and developing your signature coffee beverages. Perfect for aspiring professionals or home baristas seeking to refine their craft.</p>
+                        <a href="#register-container" class="register-button">Register</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outer-container">
+                <div class="barista-section">
+                    <img src="image/Global_Coffee_Cultures.webp" alt="Global Coffee Cultures" class="barista-photo">
+                    <div class="barista-content">
+                        <h2>Global Coffee Cultures</h2>
+                        <ul>
+                            <li>Date: Fourth Saturday of every month</li>
+                            <li>Time: 3:00 PM - 5:00 PM</li>
+                            <li>Location: Bean Boutique Coffee Shop</li>
+                        </ul>
+                        <p>Explore the diverse world of coffee cultures with our expert guide. Learn about traditional brewing methods and coffee rituals from around the globe, and experience how different cultures enjoy coffee.</p>
+                        <a href="#register-container" class="register-button">Register</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outer-container">
+                <div class="barista-section">
+                    <img src="image/Coffee_and_Health.jpeg" alt="Coffee and Health" class="barista-photo">
+                    <div class="barista-content">
+                        <h2>Coffee & Health</h2>
+                        <ul>
+                            <li>Date: Fourth Sunday of every month</li>
+                            <li>Time: 1:00 PM - 3:00 PM</li>
+                            <li>Location: Bean Boutique Coffee Shop</li>
+                        </ul>
+                        <p>Separate fact from fiction in this informative workshop that explores the relationship between coffee and health. Discover the benefits and misconceptions about coffee consumption.</p>
+                        <a href="#register-container" class="register-button">Register</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="coffeeCatalogueHeading">
+            <br>
+            <h3>Events</h3>
+        </section>
+
+        <section>
+            <div class="outer-container">
+                <div class="barista-section">
+                    <img src="image/coffee_tasting.webp" alt="Coffee Tasting" class="barista-photo">
+                    <div class="barista-content">
+                        <h2>Coffee Tasting</h2>
+                        <ul>
+                            <li>Date: 20, December, 2024</li>
+                            <li>Time: 4:00 PM - 9:00 PM</li>
+                            <li>Location: Bean Boutique Coffee Shop</li>
+                        </ul>
+                        <p>Celebrate the holiday season with a special coffee event. Sample exclusive holiday blends, learn about the roasting process, and enjoy festive treats. A perfect event to get into the holiday spirit and find unique gifts for coffee lovers.</p>
+                        <a href="#register-container" class="register-button">Register</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="outer-container">
+                <div class="barista-section">
+                    <img src="image/Jazz.jpg" alt="Coffee & Jazz Night" class="barista-photo">
+                    <div class="barista-content">
+                        <h2>Coffee & Jazz Night</h2>
+                        <ul>
+                            <li>Date: Every Friday Night</li>
+                            <li>Time: 6:00 PM - 10:00 PM</li>
+                            <li>Location: Bean Boutique Coffee Shop</li>
+                        </ul>
+                        <p>Relax and unwind with a night of smooth jazz and exquisite coffee. Enjoy live music performances while sipping on specially crafted coffee drinks and cocktails. A perfect evening for music lovers and coffee connoisseurs alike.</p>
+                        <a href="#register-container" class="register-button">Register</a>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="outer-container">
+                <div class="barista-section">
+                    <img src="image/coffee_fair.jpg" alt="Coffee Science Fair" class="barista-photo">
+                    <div class="barista-content">
+                        <h2>Coffee Science Fair</h2>
+                        <ul>
+                            <li>Date: Every Monday Night</li>
+                            <li>Time: 6:00 PM - 8:00 PM</li>
+                            <li>Location: Bean Boutique Coffee Shop</li>
+                        </ul>
+                        <p>An educational event showcasing the science behind coffee, with interactive exhibits and demonstrations.</p>
+                        <a href="#register-container" class="register-button">Register</a>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <hr>
+        <!-- Registration Form Section -->
+        <section class="coffeeCatalogueHeading">
+            <br>
+            <h2>Hurry Up and Register right now!</h2>
+        </section>
+
+        <section id="register-container">
+        
+            <div class="registration-form-section">
+                <div class="form-content">
+                    <h2>Workshop and Events Registration form</h2>
+                    <form action="mailto:monkbhonegyi123@gmail.com class="registration-form">
+                        <div class="form-group">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="additional-info">Additional Information:</label>
+                            <textarea id="additional-info" name="additional-info" rows="4" placeholder="Enter any additional information here..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="event">Select One Event:</label>
+                            <select id="event" name="event">
+                                <option value="espresso-workshop">Espresso Workshop - $30</option>
+                                <option value="Pour-Over Perfection">Pour-Over Perfection - $45</option>
+                                <option value="latte-art-workshop">Latte Art Workshop - $40</option>
+                                <option value="Cold Brew Creations">Cold Brew Creations - $30</option>
+                                <option value="Coffee and Dessert Pairing">Coffee and Dessert Pairing - $50</option>
+                                <option value="Advanced Barista Skills">Advanced Barista Skills - $35</option>
+                                <option value="Global Coffee Cultures">Global Coffee Cultures - $30</option>
+                                <option value="Coffee & Health">Coffee & Health - $30</option>
+                                <option value="coffee-tasting">Coffee Tasting - $30</option>
+                                <option value="Coffee & Jazz Night">Coffee & Jazz Night - $50</option>
+                                <option value="coffee-tasting">Coffee Science Fair - $35</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Reasons for Attending:</label>
+                            <div>
+                                <input type="checkbox" id="expert-training" name="reason" value="Expert-Led Training" required>
+                                <label for="expert-training">Expert-Led Training</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="hands-on-learning" name="reason" value="Hands-On Learning">
+                                <label for="hands-on-learning">Hands-On Learning</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="community-connection" name="reason" value="Community Connection">
+                                <label for="community-connection">Community Connection</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Register">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+            <!-- Information Section -->
+            <section class="info-section">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>How to Register:</h3>
+                        <p>Registering for our events and workshops is simple. Fill out our online registration form, providing your name, email address, and preferred event or workshop date. Upon registration, you'll receive a confirmation email with further details.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Fees and Payment Options:</h3>
+                        <p>Our workshops are priced affordably, ranging from $30 to $50 per session. Payment can be made via credit card, PayPal, or in-store. Early bird discounts are available for those who book at least two weeks in advance.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Cancellation Policy:</h3>
+                        <p>Cancellations made 48 hours before the event will receive a full refund. Unfortunately, we cannot refund cancellations made less than 48 hours before the event.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+
+        <hr>
+        <footer class="footer">
+            <div class="footer-grid">
+              <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p><strong>Our shop located near Kyike Ka San Pagoda Road, Sa/Ka, Ward Thingangyun.</strong></p>
+                <p><strong>+959-777-213-467</strong></p>
+                <p><strong>beanBotiqueCoffee@gmail.com</strong></p>
+              </div>
+              <div class="footer-column">
+                <h4>Explore Our Coffee</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffeeSelection.html">Coffee Selection</a></li>
+                    <li><a href="brewing.html">Brewing Equipment</a></li>
+                    <li><a href="workshop&event.html">Events & Workshops</a></li>
+                    <li><a href="subcription.html">Special Offers and Subscriptions</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>Follow Us On</h4>
+                <div class="social-icons">
+                  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Bean Boutique Coffee Shop. All rights reserved.</p>
+              </div>
+        </footer>  
+        
+
+    </main>
+</body>
+</html>

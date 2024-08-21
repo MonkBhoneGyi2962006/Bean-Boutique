@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewing Equipement</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="linkactive.js"></script>
+    <script src="menu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header class="mainWelcome">
+            <div class="brewing_overlay"></div>
+            <div class="color-tint"></div>
+                <h1>Brewing Like Heaven</h1>
+                    <nav>
+                        <div class="logo-tag">
+                            <a href="index.html"><img src="image/coffee.png" alt="Bean Boutique Logo"></a>
+                            <input type="text" name="search" placeholder="Search.."> <!-- Search Bar Added -->
+                        </div>
+                        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Menu Icon for Mobile -->
+                        <ul id="nav-list">
+                            <li><a href="index.html" class="showactive-link">Home</a></li>
+                            <li><a href="coffeeSelection.html" class="showactive-link">Coffee Selection</a></li>
+                            <li><a href="brewing.html" class="showactive-link">Brewing Equipment</a></li>
+                            <li><a href="workshop&event.html" class="showactive-link" >Events & Workshops</a></li>
+                            <li><a href="subcription.html" class="showactive-link">Special Offers and Subscriptions</a></li>
+                            <li><a href="cart.html" class="showactive-link">Shopping Cart</a></li>
+                        </ul>
+                    </nav>
+                 <div class="welcome-text">
+                    <p>Our assortment of coffee brewing tools will introduce you to the finer points of coffee brewing. Whether you're an expert barista or just interested in home brewing, you'll find everything you need here to make the best cup of coffee."</p>
+                </div>
+        </header>
+
+        <br>
+        <section class="coffeeCatalogueHeading">
+            <h2>Coffee Brewing Equipment</h2>
+            <hr>
+            <h3>Coffee Maker</h3>
+        </section>
+        
+        <!-- Coffee brewing Catalog Section -->
+        <section class="coffee-catalog">
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/coffee_drip_maker.webp" alt="Automatic Drip Coffee Maker">
+                </div>
+                <div class="coffee-details">
+                    <h2>Automatic Drip Coffee Maker</h2>
+                    <p class="description">Programmable machines that brew coffee by dripping hot water over coffee grounds, ideal for consistent, large-batch brewing. They contain automatic features like timers and auto shut-down for convenience.</p>
+                    <p class="price">Price: $150.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/manual_drip_coffee_maker.webp" alt="Manual Drip Coffee Maker">
+                </div>
+                <div class="coffee-details">
+                    <h2>Manual Drip Coffee Maker</h2>
+                    <p class="description">Classic machines that use a drip method to brew large batches of coffee efficiently and easy to use. Perfect for everyday brewing with consistent flavor.</p>
+                    <p class="price">Price: $120.65</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Single-Serve_Coffee_Maker.jpg" alt="Single-Serve Coffee Maker">
+                </div>
+                <div class="coffee-details">
+                    <h2>Single-Serve Coffee Maker</h2>
+                    <p class="description">Compact and convenient machines designed to brew one cup at a time, offering personalized coffee with minimal waste.</p>
+                    <p class="price">Price: $125.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/espresso_machine.jpg" alt="Espresso Machine">
+                </div>
+                <div class="coffee-details">
+                    <h2>Espresso Machine</h2>
+                    <p class="description">High-pressure machines for brewing rich, concentrated espresso shots. Ideal for coffee lovers who appreciate the art of espresso-making.</p>
+                    <p class="price">Price: $230.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="espressomachineDetail.html" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Card</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/french_presses.jpg" alt="French Press">
+                </div>
+                <div class="coffee-details">
+                    <h2>French Press</h2>
+                    <p class="description">A simple, manual brewing method that produces bold and robust coffee by steeping coarse grounds in hot water.</p>
+                    <p class="price">Price: $40.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/nitro_cold_brew_coffee_maker.webp" alt="Nitro Cold Brew Coffee Maker">
+                </div>
+                <div class="coffee-details">
+                    <h2>Nitro Cold Brew Coffee Maker</h2>
+                    <p class="description">Infuses cold brew coffee with nitrogen to create a smooth, creamy texture with a frothy head. This method enhances the coffee’s natural flavors and results in a less acidic, velvety drink.</p>
+                    <p class="price">Price: $150.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/siphon_coffee_maker.webp" alt="Siphon Coffee Maker">
+                </div>
+                <div class="coffee-details">
+                    <h2>Siphon Coffee Maker</h2>
+                    <p class="description">Also known as vacuum brewers, these machines use pressure and vacuum to brew coffee, resulting in a clean and aromatic cup.</p>
+                    <p class="price">Price: $100.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/percolator.jpg" alt="Percolator">
+                </div>
+                <div class="coffee-details">
+                    <h2>Percolator</h2>
+                    <p class="description">A traditional coffee maker where water is heated and circulated through coffee grounds in a central chamber. The brewed coffee is collected in a separate pot.</p>
+                    <p class="price">Price: $50.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Vietnamese_Coffee_Maker.webp" alt="Vietnamese Coffee Maker (Phin)">
+                </div>
+                <div class="coffee-details">
+                    <h2>Vietnamese Coffee Maker (Phin)</h2>
+                    <p class="description">A small metal filter used to make Vietnamese coffee by dripping hot water through coffee grounds directly into a cup. Often used with sweetened condensed milk.</p>
+                    <p class="price">Price: $20.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Aeropress.webp" alt="Aeropress">
+                </div>
+                <div class="coffee-details">
+                    <h2>Aeropress</h2>
+                    <p class="description">A portable, manual coffee maker that uses air pressure to push hot water through coffee grounds, resulting in a strong and smooth coffee.</p>
+                    <p class="price">Price: $40.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Moka_Pot.webp" alt="Moka Pot">
+                </div>
+                <div class="coffee-details">
+                    <h2>Moka Pot</h2>
+                    <p class="description">A stovetop coffee maker that brews coffee by passing boiling water pressurized by steam through coffee grounds. It’s known for making a strong, espresso-like coffee.</p>
+                    <p class="price">Price: $30.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/tukrish_coffee_maker.avif" alt="Automatic Tukrish Coffee Maker">
+                </div>
+                <div class="coffee-details">
+                    <h2>Automatic Tukrish Coffee Maker</h2>
+                    <p class="description">Brew authentic Turkish coffee effortlessly with this automatic maker. It handles heating and frothing for a rich, frothy cup.</p>
+                    <p class="price">Price: $150.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Coffee_Urn.avif" alt="Coffee Urn">
+                </div>
+                <div class="coffee-details">
+                    <h2>Coffee Urn</h2>
+                    <p class="description">Ideal for large gatherings, this coffee urn brews and keeps coffee hot for serving. Perfect for events and office use.</p>
+                    <p class="price">Price: $80.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/clever_dripper.jpg" alt="Clever Dripper">
+                </div>
+                <div class="coffee-details">
+                    <h2>Clever Dripper</h2>
+                    <p class="description">Brew coffee with a blend of drip and immersion methods. Combines convenience with control over flavor extraction.</p>
+                    <p class="price">Price: $25.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Bean-to-Cup_Coffee_Maker.jpg" alt="Bean-to-Cup Coffee Maker">
+                </div>
+                <div class="coffee-details">
+                    <h2>Bean to Cup Coffee Maker</h2>
+                    <p class="description">Automatically grinds beans and brews coffee in one machine. Offers convenience and fresh flavor with each cup.</p>
+                    <p class="price">Price: $500.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+        </section>
+
+        <hr>
+        <section class="coffeeCatalogueHeading">
+            <br>
+            <h3>Grinders</h3>
+        </section>
+        <section class="coffee-catalog">
+            <!-- Iced Latte -->
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/blade_grinder_with_motor.jpg" alt="Blade Grinder">
+                </div>
+                <div class="coffee-details">
+                    <h2>Blade Grinder</h2>
+                    <p class="description">Affordable grinders that use spinning blades to grind coffee beans. Best for beginners seeking a quick and easy grind.</p>
+                    <p class="price">Price: $20.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/burr_grinder.webp" alt="Burr Grinder">
+                </div>
+                <div class="coffee-details">
+                    <h2>Burr Grinder</h2>
+                    <p class="description">High-quality grinders that crush beans between burrs for a uniform grind size, enhancing flavor extraction and consistency.</p>
+                    <p class="price">Price: $50.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Manual_Grinder.jpg" alt="Manual Grinder">
+                </div>
+                <div class="coffee-details">
+                    <h2>Manual Grinder</h2>
+                    <p class="description">Hand-operated grinders that allow precise control over grind size, perfect for coffee aficionados who enjoy the tactile experience of grinding beans.</p>
+                    <p class="price">Price: $30.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+        </section>
+
+        <hr>
+        <section class="coffeeCatalogueHeading">
+            <br>
+            <h3>Accessories</h3>
+        </section>
+        <section class="coffee-catalog">
+            <!-- Iced Latte -->
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/stainless-steel-permanent-filter-coffee-maker-permanent-filter-borosilicate-glass.jpg.webp" alt="Stainless Steel Filter">
+                </div>
+                <div class="coffee-details">
+                    <h2>Stainless Steel Filter</h2>
+                    <p class="description">Filters that trap coffee grounds, ensuring a clean and smooth cup of coffee.</p>
+                    <p class="price">Price: $20.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Frother.jpg" alt="Frothers">
+                </div>
+                <div class="coffee-details">
+                    <h2>Frother</h2>
+                    <p class="description">Handheld or electric devices that whip milk into a frothy texture, ideal for creating lattes and cappuccinos at home.</p>
+                    <p class="price">Price: $15.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/carafe.webp" alt="Carafe">
+                </div>
+                <div class="coffee-details">
+                    <h2>Carafe</h2>
+                    <p class="description">Elegant containers designed to hold and serve brewed coffee while maintaining optimal temperature and flavor.</p>
+                    <p class="price">Price: $30.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/goose_neck.webp" alt="Gooseneck Kettle">
+                </div>
+                <div class="coffee-details">
+                    <h2>Gooseneck Kettle</h2>
+                    <p class="description">Precision kettles equipped with temperature controls, designed for brewing techniques like pour-over and French press.</p>
+                    <p class="price">Price: $80.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div> 
+
+        </section>
+        <hr>
+
+        <footer class="footer">
+            <div class="footer-grid">
+              <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p><strong>Our shop located near Kyike Ka San Pagoda Road, Sa/Ka, Ward Thingangyun.</strong></p>
+                <p><strong>+959-777-213-467</strong></p>
+                <p><strong>beanBotiqueCoffee@gmail.com</strong></p>
+              </div>
+              <div class="footer-column">
+                <h4>Explore Our Coffee</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffeeSelection.html">Coffee Selection</a></li>
+                    <li><a href="brewing.html">Brewing Equipment</a></li>
+                    <li><a href="workshop&event.html">Events & Workshops</a></li>
+                    <li><a href="subcription.html">Special Offers and Subscriptions</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>Follow Us On</h4>
+                <div class="social-icons">
+                  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Bean Boutique Coffee Shop. All rights reserved.</p>
+              </div>
+        </footer>
+    </main>
+</body>
+</html>

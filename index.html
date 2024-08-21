@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="map.js"></script>
+    <script src="popup.js"></script>
+    <script src="linkactive.js"></script>
+    <script src="menu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <main>
+        <!-- Popup Section -->
+        <section>
+            <div id="specialPopup" class="special-popup">
+                <div class="special-popup-content">
+                    <span class="special-close-btn" onclick="closePopup()">&times;</span>
+                    <h2>Come and Let's order and subcribe now!</h2>
+                    <p>Make an order now or subscribe for exclusive deals and buy one and get one free!</p>
+                    <button class="special-btn" onclick="orderNow()">Order Now</button>
+                    <button class="special-btn" onclick="subscribeNow()">Subscribe</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Header Section -->
+        <header class="mainWelcome">
+            <div class="overlay"></div>
+            <div class="color-tint"></div>
+            <h1>Bean Boutique Coffee Shop</h1>
+            <nav>
+                <div class="logo-tag">
+                    <a href="index.html"><img src="image/coffee.png" alt="Bean Boutique Logo"></a>
+                    <input type="text" name="search" placeholder="Search..">
+                </div>
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Menu Icon for Mobile -->
+                <ul id="nav-list">
+                    <li><a href="index.html" class="showactive-link">Home</a></li>
+                    <li><a href="coffeeSelection.html" class="showactive-link">Coffee Selection</a></li>
+                    <li><a href="brewing.html" class="showactive-link">Brewing Equipment</a></li>
+                    <li><a href="workshop&event.html" class="showactive-link" >Events & Workshops</a></li>
+                    <li><a href="subcription.html" class="showactive-link">Special Offers and Subscriptions</a></li>
+                    <li><a href="cart.html" class="showactive-link">Shopping Cart</a></li>
+                </ul>
+            </nav>
+            <div class="welcome-text">
+                <p>Welcome to Bean Botique Coffee Shop! Our community is filled to the brim with coffee lovers and light hearted drinkers as this stylish little oasis brings locals together in a fashion-oriented atmosphere where everyone may unwind at "Bean Boutique."</p>
+            </div>
+        </header>
+        
+        
+        <!--Heading Section -->
+        <section class="coffeeCatalogueHeading">
+            <h2>Welcome to Bean Boutique</h2>
+            <p>We are ready to served you a taste of coffee you've never had before. Let's explore Bean Botique right now!</p>
+            <hr>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="our-story">
+            <div class="our-story-wrapper">
+                <img id="slide" src="image/ACC_Website-2-Header_1500x750_blog-9_1280x640.jpg.webp" alt="Slideshow Image">
+                <div class="our-story-content">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2012, Bean Boutique started as a small, family-owned coffee shop with a passion for delivering the finest coffee experience. Over the years, we've grown into a beloved local spot known for our dedication to quality, sustainability, and community engagement. We source our beans from fair-trade farms.......</p>
+                    <a href="subcription.html" class="read-more">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Heading Section -->
+        <section class="coffeeCatalogueHeading">
+            <h2>Customer Favortite</h2>
+            <p>Explore most-loved coffee favorites by customers!</p>
+            <hr>
+        </section>
+        
+        <!-- Coffee Catalogue Section -->
+        <section class="coffee-catalog">
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Iced-Vanilla-Latte-.webp" alt="Iced Latte">
+                </div>
+                <div class="coffee-details">
+                    <h2>Iced Vanilla Latte</h2>
+                    <p class="description">An Iced Latte is a refreshing blend of rich espresso and cold milk served over ice.</p>
+                    <p class="price">Price: $10.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="coffeeSelection.html" class="coffee-button">Order Now</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Flat-white.jpg" alt="Flate White">
+                </div>
+                <div class="coffee-details">
+                    <h2>Flat-white</h2>
+                    <p class="description">A smooth and velvety coffee made with a double shot of espresso and microfoam milk.</p>
+                    <p class="price">Price: 12.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="coffeeSelection.html" class="coffee-button">Order Now</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Caramel-Latte-.jpg" alt="Caramel Latte">
+                </div>
+                <div class="coffee-details">
+                    <h2>Caramel Latte</h2>
+                    <p class="description">A sweet and creamy blend of espresso, steamed milk, and caramel syrup, topped with a drizzle of caramel sauce.</p>
+                    <p class="price">Price: $9.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="coffeeSelection.html" class="coffee-button">Order Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Heading Section -->
+        <section class="coffeeCatalogueHeading">
+            <h2>Customer Choice Brweing Equipment</h2>
+            <p>Explore our high-end and best quality equipment in the world.</p>
+            <hr>
+        </section>
+
+        <!-- Customer Choice Brewing Equipment Section -->
+        <section class="coffee-catalog">
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/espresso_machine.jpg" alt="Espresso Machine">
+                </div>
+                <div class="coffee-details">
+                    <h2>Espresso Machine</h2>
+                    <p class="description">High-pressure machines for brewing rich, concentrated espresso shots. Ideal for coffee lovers who appreciate the art of espresso-making.</p>
+                    <p class="price">Price: $6.50</p>
+                </div>
+
+                <div class="coffee-selection-button-container">
+                    <a href="espressomachineDetail.html" class="coffee-button">View Details</a>
+                    <a href="brewing.html" class="coffee-button">Order Now</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/coffee_drip_maker.webp" alt="Automatic Drip Coffee Maker">
+                </div>
+                <div class="coffee-details">
+                    <h2>Automatic Drip Coffee Maker</h2>
+                    <p class="description">Programmable machines that brew coffee by dripping hot water over coffee grounds, ideal for consistent, large-batch brewing. They contain automatic features like timers and auto shut-down for convenience.</p>
+                    <p class="price">Price: $6.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="brewing.html" class="coffee-button">Order Now</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Single-Serve_Coffee_Maker.jpg" alt="Single-Serve Coffee Maker">
+                </div>
+                <div class="coffee-details">
+                    <h2>Single-Serve Coffee Maker</h2>
+                    <p class="description">Compact and convenient machines designed to brew one cup at a time, offering personalized coffee with minimal waste.</p>
+                    <p class="price">Price: $6.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="brewing.html" class="coffee-button">Order Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Heading Section -->
+        <section class="coffeeCatalogueHeading">
+            <h2>Lets' participate our workshops and events</h2>
+            <p>Explore our work shop and event that trending and exciting.</p>
+            <hr>
+        </section>
+
+        <!--Event and workshop Section -->
+        <section>
+            <div class="outer-container">
+                <div class="barista-section">
+                    <img src="image/Pour+Over+Coffee+1.jpg" alt="Pour-Over Perfection" class="barista-photo">
+                    <div class="barista-content">
+                        <h2>Pour-Over Perfection</h2>
+                        <ul>
+                            <li>Date: Every Thursday</li>
+                            <li>Time: 2:00 PM - 4:00 PM</li>
+                            <li>Location: Bean Boutique Coffee Shop</li>
+                        </ul>
+                        <p>Master the pour-over method with hands-on practice using various coffee drippers. Understand the importance of water temperature, bloom time, and grind size in crafting a flawless cup of coffee.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="outer-container">
+                <div class="barista-section">
+                    <img src="image/coffee_tasting.webp" alt="Coffee Tasting" class="barista-photo">
+                    <div class="barista-content">
+                        <h2>Coffee Tasting</h2>
+                        <ul>
+                            <li>Date: 20, December, 2024</li>
+                            <li>Time: 4:00 PM - 9:00 PM</li>
+                            <li>Location: Bean Boutique Coffee Shop</li>
+                        </ul>
+                        <p>Celebrate the holiday season with a special coffee event. Sample exclusive holiday blends, learn about the roasting process, and enjoy festive treats. A perfect event to get into the holiday spirit and find unique gifts for coffee lovers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <a href="workshop&event.html" class="submit-link">Register Now!</a>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Our Shop Location Section -->
+        <section class="coffeeCatalogueHeading">
+            <h2>Our Shop Location</h2>
+            <p>Find us in the heart of the city, where the aroma of freshly roasted coffee.</p>
+            <div class="shop-location-container">
+                <div class="shop-map">
+                    <div id="map"></div>
+                </div>
+            </div>
+            <hr>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-grid">
+              <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p><strong>Our shop located near Kyike Ka San Pagoda Road, Sa/Ka, Ward Thingangyun.</strong></p>
+                <p><strong>+959-777-213-467</strong></p>
+                <p><strong>beanBotiqueCoffee@gmail.com</strong></p>
+              </div>
+              <div class="footer-column">
+                <h4>Explore Our Coffee</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffeeSelection.html">Coffee Selection</a></li>
+                    <li><a href="brewing.html">Brewing Equipment</a></li>
+                    <li><a href="workshop&event.html">Events & Workshops</a></li>
+                    <li><a href="subcription.html">Special Offers and Subscriptions</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>Follow Us On</h4>
+                <div class="social-icons">
+                  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Bean Boutique Coffee Shop. All rights reserved.</p>
+              </div>
+        </footer>  
+    </main>
+</body>
+</html>

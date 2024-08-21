@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Selection</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="linkactive.js"></script>
+    <script src="menu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header class="mainWelcome">
+            <div class="coffee-selection-overlay"></div>
+            <div class="color-tint"></div>
+                <h1>Fresh till night & find your Perfect Coffee</h1>
+                    <nav>
+                        <div class="logo-tag">
+                            <a href="index.html"><img src="image/coffee.png" alt="Bean Boutique Logo"></a>
+                            <input type="text" name="search" placeholder="Search.."> 
+                        </div>
+                        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Menu Icon for Mobile -->
+                        <ul id="nav-list">
+                            <li><a href="index.html" class="showactive-link">Home</a></li>
+                            <li><a href="coffeeSelection.html" class="showactive-link">Coffee Selection</a></li>
+                            <li><a href="brewing.html" class="showactive-link">Brewing Equipment</a></li>
+                            <li><a href="workshop&event.html" class="showactive-link" >Events & Workshops</a></li>
+                            <li><a href="subcription.html" class="showactive-link">Special Offers and Subscriptions</a></li>
+                            <li><a href="cart.html" class="showactive-link">Shopping Cart</a></li>
+                        </ul>
+                    </nav>
+                 <div class="welcome-text">
+                    <p>With all of that in mind, our selection process is very well-thought-out and will enable you to get a coffee based on one that best fits your personal tastes or ethical ideals. Browse our range today and discover your ideal cup of coffee."</p>
+                </div>
+        </header>
+
+        <br>
+        <section class="coffeeCatalogueHeading">
+            <h2>Coffee Selection</h2>
+            <hr>
+            <h3>Espresso Based Coffee</h3>
+        </section>
+        <!-- Coffee Catalog Section -->
+        <section class="coffee-catalog">
+            <!-- Iced Latte -->
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Iced-Vanilla-Latte-.webp" alt="Iced Latte">
+                </div>
+                <div class="coffee-details">
+                    <h2>Iced Latte</h2>
+                    <p class="description">An Iced Latte is a refreshing blend of rich espresso and cold milk served over ice.</p>
+                    <p class="price">Price: $10.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <!-- Espresso -->
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2018__06__20180613-coffee-vs-espresso-vicky-wasik-3-1500x1125-418fa2a14e7249b18040c2c34bf8569c.jpg" alt="Espresso">
+                </div>
+                <div class="coffee-details">
+                    <h2>Espresso</h2>
+                    <p class="description">The Espresso is a concentrated shot of rich, bold coffee flavor.</p>
+                    <p class="price">Price: $15.00</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <!-- Cappuccino -->
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/k-Photo-Recipe-Ramp-Up-2022-07-Cappuccino-Cappuccino.jpeg" alt="Cappuccino">
+                </div>
+                <div class="coffee-details">
+                    <h2>Cappuccino</h2>
+                    <p class="description">A Cappuccino is a harmonious blend of espresso, steamed milk, and milk foam.</p>
+                    <p class="price">Price: $16.32</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Flat-white.jpg" alt="Flate White">
+                </div>
+                <div class="coffee-details">
+                    <h2>Flat-white</h2>
+                    <p class="description">A smooth and velvety coffee made with a double shot of espresso and microfoam milk.</p>
+                    <p class="price">Price: $12.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Caramel-Latte-.jpg" alt="Caramel Latte">
+                </div>
+                <div class="coffee-details">
+                    <h2>Caramel Latte</h2>
+                    <p class="description">A sweet and creamy blend of espresso, steamed milk, and caramel syrup, topped with a drizzle of caramel sauce.</p>
+                    <p class="price">Price: $9.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Latte-macchiato-Lilie-Bakery.jpg.webp" alt="Macchiato">
+                </div>
+                <div class="coffee-details">
+                    <h2>Macchiato</h2>
+                    <p class="description">Bold espresso with a small amount of frothy milk.</p>
+                    <p class="price">Price: $14.90</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/mocha-latte-recipe-Featured-Photo-Template.png.webp" alt="Mocha">
+                </div>
+                <div class="coffee-details">
+                    <h2>Mocha</h2>
+                    <p class="description">Espresso blended with chocolate syrup and steamed milk, topped with whipped cream.</p>
+                    <p class="price">Price: $13.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Affogato_0.jpg" alt="Affogato">
+                </div>
+                <div class="coffee-details">
+                    <h2>Affogato</h2>
+                    <p class="description">Espresso poured over a scoop of vanilla ice cream.</p>
+                    <p class="price">Price: $15.67</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/how-to-make-a-cortado-coffee.png" alt="Caffè Cortado">
+                </div>
+                <div class="coffee-details">
+                    <h2>Caffè Cortado</h2>
+                    <p class="description">Equal parts espresso and warm milk, providing a strong yet smooth coffee experience.</p>
+                    <p class="price">Price: $13.26</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+        </section>
+        <hr>
+        <br>
+        <section class="coffeeCatalogueHeading">
+            <br>
+            <h3>Specialty Coffee</h3>
+        </section>
+
+        <section class="coffee-catalog">
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Pumpkin-Spice-Latte-1-2.jpg" alt="Pumpkin Spice Latte">
+                </div>
+                <div class="coffee-details">
+                    <h2>Pumpkin Spice Latte</h2>
+                    <p class="description">Latte with pumpkin and spices, topped with whipped cream.</p>
+                    <p class="price">Price: $20.33</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Caramel-Macchiato-10.jpg" alt="Caramel Macchiato">
+                </div>
+                <div class="coffee-details">
+                    <h2>Caramel Macchiate</h2>
+                    <p class="description">Vanilla latte with a caramel drizzle on top.</p>
+                    <p class="price">Price: $18.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/spiced-irish-coffee-20-1-0.jpg" alt="Irish Coffee">
+                </div>
+                <div class="coffee-details">
+                    <h2>Irish Coffee</h2>
+                    <p class="description">Coffee with Irish whiskey and a creamy topping.</p>
+                    <p class="price">Price: $16.34</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/nitro64_lifestyle_22.png.webp" alt="Nitro Cold Brew">
+                </div>
+                <div class="coffee-details">
+                    <h2>Nitro Cold Brew</h2>
+                    <p class="description">Cold brew infused with nitrogen for a creamy, effervescent texture.</p>
+                    <p class="price">Price: $19.98</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/vietnamese-egg-coffee-3030347-hero-01-9897b12116fc4439b415c63110aa90e6.jpg" alt="Vietnamese Coffee">
+                </div>
+                <div class="coffee-details">
+                    <h2>Vietnamese Coffee</h2>
+                    <p class="description">Rich, creamy coffee topped with a frothy, sweet egg foam. Served hot for a unique and indulgent treat.</p>
+                    <p class="price">Price: $14.23</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/pouring-turkish-coffee.jpg" alt="Tukrish Coffee">
+                </div>
+                <div class="coffee-details">
+                    <h2>Tukrish Coffee</h2>
+                    <p class="description">Rich and aromatic coffee brewed in a traditional cezve, offering an authentic and bold flavor experience with a velvety finish.</p>
+                    <p class="price">Price: $13.23</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <br>
+        <section class="coffeeCatalogueHeading">
+            <h3>Coffee seeds and Pownder</h3>
+        </section>
+        <section class="coffee-catalog">
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/espresso_bean.jpg" alt="Espresso Bean">
+                </div>
+                <div class="coffee-details">
+                    <h2>Espresso Beans</h2>
+                    <p class="description">Bold and rich, perfect for classic espresso or lattes. Available in whole bean or ground.</p>
+                    <p class="price">Price: $15.99</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="espressoBean.html" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/arabica.jpg.webp" alt="Arabica Beans">
+                </div>
+                <div class="coffee-details">
+                    <h2>Arabica Beans</h2>
+                    <p class="description">Smooth and aromatic, offering a balanced flavor. Available in whole bean or ground.</p>
+                    <p class="price">Price: $14.99</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/espresso-powder.jpg" alt="Espresso Pownder">
+                </div>
+                <div class="coffee-details">
+                    <h2>Espresso Pownder</h2>
+                    <p class="description">Bean Botique Coffee shop's best gind esprsso which is grow in our farm.</p>
+                    <p class="price">Price: $16.99</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="#" class="coffee-button">View Details</a>
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="coffeeCatalogueHeading">
+            <br>
+            <h3>Hot drink and Teas</h3>
+        </section>
+        <section class="coffee-catalog">
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Indulgent-Hot-Chocolate-FT-RECIPE0223-fd36942ef266417ab40440374fc76a15.jpg" alt="Hot chocolate">
+                </div>
+                <div class="coffee-details">
+                    <h2>Hot Chocolate</h2>
+                    <p class="description">Rich chocolate and steamed milk, topped with whipped cream.</p>
+                    <p class="price">Price: $13.54</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/black_tea.webp" alt="Black Tea">
+                </div>
+                <div class="coffee-details">
+                    <h2>Black Tea</h2>
+                    <p class="description">Strong and robust, served with or without milk.</p>
+                    <p class="price">Price: $12.43</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/green_tea.webp" alt="Green Tea">
+                </div>
+                <div class="coffee-details">
+                    <h2>Green Tea</h2>
+                    <p class="description">Light and refreshing, known for its antioxidants.</p>
+                    <p class="price">Price: $12.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/herbal_tea.webp" alt="Herbal Tea">
+                </div>
+                <div class="coffee-details">
+                    <h2>Herbal Tea</h2>
+                    <p class="description">Caffeine-free options like chamomile and peppermint.</p>
+                    <p class="price">Price: $10.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/chai_tea.webp" alt="Chai Tea">
+                </div>
+                <div class="coffee-details">
+                    <h2>Chai Tea</h2>
+                    <p class="description">Spiced black tea with milk and a blend of aromatic spices.</p>
+                    <p class="price">Price: $13.83</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/D2A04E37-1046-437B-928C-EB1D5F2E326B.jpg.webp" alt="Bubble Tea">
+                </div>
+                <div class="coffee-details">
+                    <h2>Bubble Tea</h2>
+                    <p class="description">Sweet tea with chewy tapioca pearls, available in flavors like classic milk tea, fruity blends, or matcha. Served cold with a wide straw.</p>
+                    <p class="price">Price: $14.33</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <section class="coffeeCatalogueHeading">
+            <br>
+            <h3>Pastries and Snack</h3>
+        </section>
+        <section class="coffee-catalog">
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/jumbo-blueberry-muffins-with-sour-cream-1x1-1.jpg" alt="Blueberry Muffins">
+                </div>
+                <div class="coffee-details">
+                    <h2>Blueberry Muffins</h2>
+                    <p class="description">Moist muffin loaded with fresh blueberries.</p>
+                    <p class="price">Price: $11.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/almond_croissant.jpg" alt="Almond Croissant">
+                </div>
+                <div class="coffee-details">
+                    <h2>Almond Croissant</h2>
+                    <p class="description">Flaky croissant with a hint of almond flavor.</p>
+                    <p class="price">Price: $9.21</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/chocolate_cookie.jpg" alt="Chocolate Cookie">
+                </div>
+                <div class="coffee-details">
+                    <h2>Chocolate Cookie</h2>
+                    <p class="description">Chewy cookie with rich chocolate chips.</p>
+                    <p class="price">Price: $6.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+                
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/sandwich.jpg" alt="Sandwiches">
+                </div>
+                <div class="coffee-details">
+                    <h2>Sandwich</h2>
+                    <p class="description">Bread with ham or other meat, cheese, and fresh bread.</p>
+                    <p class="price">Price: $12.30</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/Banh_Mi.jpg" alt="Vietnamese Sandwich (Bánh Mì)">
+                </div>
+                <div class="coffee-details">
+                    <h2>Vietnamese Sandwich (Bánh Mì)</h2>
+                    <p class="description">Crispy baguette filled with savory meats, pickled vegetables, fresh cilantro, and a touch of spicy mayo. A flavorful, crunchy, and satisfying sandwich.</p>
+                    <p class="price">Price: $20.30</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="coffee-item">
+                <div class="coffee-photo">
+                    <img src="image/salad.jpeg" alt="Salad">
+                </div>
+                <div class="coffee-details">
+                    <h2>Salad</h2>
+                    <p class="description">A mix of fresh greens, tomatoes, cucumbers, and roast chicken.</p>
+                    <p class="price">Price: $16.50</p>
+                </div>
+                <div class="coffee-selection-button-container">
+                    <a href="cart.html" class="coffee-button">Add to Cart</a>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <footer class="footer">
+            <div class="footer-grid">
+              <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p><strong>Our shop located near Kyike Ka San Pagoda Road, Sa/Ka, Ward Thingangyun.</strong></p>
+                <p><strong>+959-777-213-467</strong></p>
+                <p><strong>beanBotiqueCoffee@gmail.com</strong></p>
+              </div>
+              <div class="footer-column">
+                <h4>Explore Our Coffee</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffeeSelection.html">Coffee Selection</a></li>
+                    <li><a href="brewing.html">Brewing Equipment</a></li>
+                    <li><a href="workshop&event.html">Events & Workshops</a></li>
+                    <li><a href="subcription.html">Special Offers and Subscriptions</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>Follow Us On</h4>
+                <div class="social-icons">
+                  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Bean Boutique Coffee Shop. All rights reserved.</p>
+              </div>
+        </footer>  
+
+    </main>
+</body>
+</html>
